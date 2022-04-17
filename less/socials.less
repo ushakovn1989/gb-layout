@@ -1,0 +1,32 @@
+.socials {
+  display: flex;
+
+  &__item {
+    margin: 0 7px 0 0;
+
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+
+  &__link {
+    align-items: center;
+    background: #FFF;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    transition: @button-animation-time;
+
+    &:hover {
+      background: @color-accent;
+      color: #FFF;
+    }
+
+    &:active {
+      background: #9D2334;
+      transition: none;
+    }
+  }
+}

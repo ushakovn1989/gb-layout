@@ -1,0 +1,45 @@
+.buttons-list {
+  align-items: flex-end;
+  display: flex;
+  flex: 1;
+
+  &_parrent {
+    justify-content: space-between;
+  }
+
+  &__item {
+    color: #E8E8E8;
+    margin: 0 33px 0 0;
+
+    &:last-of-type {
+      margin: 0 5px 0 0;
+    }
+
+    &_wide {
+      margin: 0 41px 0 0;
+    }
+  }
+
+  &__link {
+    color: #E8E8E8;
+    
+    &:last-child {
+      display: block;
+      position: relative;
+    }
+  }
+
+  &__counter {
+    align-items: center;
+    background: @color-accent;
+    border-radius: 50%;
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    height: 19px;
+    left: 22px;
+    position: absolute;
+    top: -8px;
+    width: 19px;
+  }
+}
