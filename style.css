@@ -664,12 +664,6 @@ body {
   height: 47px;
   width: 47px;
 }
-.selected-product-slider-arrow-icon {
-  fill: #000;
-}
-.selected-product-slider-arrow:hover .selected-product-slider-arrow-icon {
-  fill: #f16d7f;
-}
 .selected-product-info-wrap {
   margin: -65px auto 129px;
   position: relative;
@@ -679,7 +673,6 @@ body {
   align-items: center;
   background: #fff;
   border: 1px solid #eaeaea;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   padding: 0 0 65px 0;
