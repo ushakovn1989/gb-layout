@@ -621,12 +621,11 @@ body {
   fill: #000;
 }
 
-.catalog-info {
+.page-info {
   background: #f8f3f4;
-  margin: 0 0 39px 0;
 }
 
-.catalog-info-wrap {
+.page-info-wrap {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -635,7 +634,7 @@ body {
   min-height: 148px;
 }
 
-.catalog-info-title {
+.page-info-title {
   color: #f16d7f;
   font-size: 24px;
   font-weight: 400;
@@ -673,20 +672,20 @@ body {
 
 .products-filters {
   display: flex;
-  margin: 0 0 35px 0;
+  margin: 0 0 64px 0;
+  padding: 51px 0 0 0;
 }
 
 .base-filter {
   box-sizing: border-box;
   margin: 0 30px 0 0;
-  padding: 13px 16px;
+  padding: 0 16px;
   position: relative;
   width: 360px;
 }
 
 .base-filter-button {
   display: inline-block;
-  margin: 0 0 16px 0;
   cursor: pointer;
 }
 
@@ -733,6 +732,7 @@ body {
 
 .base-filter-list {
   list-style-type: none;
+  padding: 16px 0 0 0;
 }
 
 .base-filter-list-item {
@@ -778,7 +778,6 @@ body {
 
 .additional-filters-list {
   display: flex;
-  padding: 16px 0 0 0;
   list-style-type: none;
 }
 
@@ -914,4 +913,183 @@ body {
 
 .pagination-item-link:hover {
   color: #ef5b70;
+}
+
+.selected-product {
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+.selected-product-slider {
+  align-items: center;
+  background: #f7f7f7;
+  border: 1px solid #eaeaea;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  min-height: 777px;
+}
+
+.selected-product-slider-arrow {
+  align-items: center;
+  background: rgba(42, 42, 42, 0.15);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  height: 47px;
+  width: 47px;
+}
+
+.selected-product-slider-arrow-icon {
+  fill: #000;
+}
+
+.selected-product-slider-arrow:hover .selected-product-slider-arrow-icon{
+  fill: #f16d7f;
+}
+
+.selected-product-info-wrap {
+  margin: -65px auto 129px;
+  position: relative;
+  width: 1140px;
+}
+
+.selected-product-info {
+  align-items: center;
+  background: #fff;
+  border: 1px solid #eaeaea;
+  box-sizing: border-box; 
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 65px 0;
+}
+
+.selected-product-description {
+  border-bottom: 1px solid #eaeaea;
+  padding: 65px 43px;
+  margin: 0 0 65px 0;
+  text-align: center;
+  width: 555px;
+}
+
+.selected-product-category {
+  color: #f16d7f;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  margin: 0 0 27px 0;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.selected-product-category:before {
+  content: "";
+  background: #ef5b70;
+  display: block;
+  height: 3px;
+  left: 246px;
+  position: absolute;
+  top: 29px;
+  width: 63px;
+}
+
+.selected-product-name {
+  color: #4d4d4d;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 22px;
+  margin: 0 0 48px 0;
+  text-transform: uppercase;
+}
+
+.selected-product-text {
+  color: #5e5e5e;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  margin: 0 0 32px 0;
+}
+
+.selected-product-price {
+  color: #ef5b70;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+}
+
+.selected-product-details-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0 0 54px 0;
+}
+
+.selected-product-details-list-item {
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  margin: 0 23px 0 0;
+  text-transform: uppercase;
+}
+
+.selected-product-details-list-item:last-child {
+  margin: 0;
+}
+
+.selected-product-details-list-item:hover {
+  color: #f16d7f;
+}
+
+#switch-product-color,
+#switch-product-size,
+#switch-product-quantity {
+  display: none;
+}
+
+.selected-product-details-button {
+  cursor: pointer;
+} 
+
+.selected-product-details-button-text {
+  margin: 0 9px 0 0;
+}
+
+.selected-product-details-button-icon {
+  fill: currentColor;
+}
+
+.selected-product-button {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #ff6a6a;
+  box-sizing: border-box;
+  height: 47px;
+  width: 211px;
+}
+
+.selected-product-button:hover {
+  background: #ff6a6a;
+}
+
+.selected-product-button:hover .selected-product-button-icon {
+  fill: #fff;
+}
+
+.selected-product-button:hover .selected-product-button-text {
+  color: #fff;
+}
+
+.selected-product-button-icon {
+  fill: #ef5b70;
+  margin: 0 23px 0 0;
+}
+
+.selected-product-button-text {
+  color: #f26376;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
 }
