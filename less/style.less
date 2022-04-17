@@ -1,0 +1,340 @@
+@import url("_legacy.less");
+
+.mixin-text (@text-color, @text-size, @text-weight, @text-line-height) {
+  color: @text-color;
+  font-size: @text-size;
+  font-weight: @text-weight;
+  line-height: @text-line-height;
+}
+
+.banner {
+  background: #f1e4e6;
+
+  &-wrap {
+    background: url(../img/banner_img.png) no-repeat -226px;
+    min-height: 764px;
+    margin: 0 auto;
+    max-width: 1140px;
+  }
+
+  &-brand {
+    position: relative;
+
+    &::before {
+      background: #f16d7f;
+      content: "";
+      display: block;
+      height: 92px;
+      left: -28px;
+      position: absolute;
+      width: 12px;
+    }
+
+    &-wrap {
+      align-items: center;
+      display: flex;
+      justify-content: right;
+      min-height: 673px;
+      margin: 0 auto;
+      max-width: 940px;
+    }
+
+    &-title {
+      .mixin-text(#222, 48px, 900, 58px);
+      text-transform: uppercase;
+    }
+
+    &-subtitle {
+      .mixin-text(#222, 32px, 700, 38px);
+      text-transform: uppercase;
+
+      &-accent {
+        color: #f16d7f;
+      }
+    }
+  }
+}
+
+.cart {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 128px;
+  max-width: 1140px;
+  padding: 96px 0 0 0;
+
+  &-content {
+    width: 652px;
+
+    &-list {
+      list-style-type: none;
+      margin: 0 0 72px 0;
+    }
+
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+      height: 306px;
+      margin: 0 0 40px 0;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      &-inner {
+        display: flex;
+      }
+
+      &-photo {
+        height: 100%;
+      }
+
+      &-data {
+        list-style-type: none;
+        padding: 22px 0 0 31px;
+        max-width: 262px;
+
+        &-string {
+          .mixin-text(#575757, 22px, 400, 26px);
+          margin: 0 0 6px 0;
+
+          &:first-child {
+            margin: 0 0 42px 0;
+          }
+
+          &:last-child {
+            margin: 0;
+          }
+        }
+      }
+
+      &-title {
+        .mixin-text(#222, 24px, 400, 29px);
+        text-transform: uppercase;
+      }
+
+      &-price {
+        color: #ef5b70;
+      }
+
+      &-quantity {
+        .mixin-text(#656565, 18px, 400, 22px);
+        border: 1px solid #EAEAEA;  
+        text-align: center;
+        margin: 0 0 0 24px;
+        width: 44px;
+      }
+
+      &-close {
+        cursor: pointer;
+        fill: #575757;
+        padding: 28px 22px 0 0;
+      }
+    }
+
+    &-control {
+      display: flex;
+      justify-content: space-between;
+
+      &-button {
+        .mixin-text(#000, 14px, 300, 17px);
+        background: transparent;
+        border: 1px solid #A4A4A4;
+        cursor: pointer;
+        text-transform: uppercase;
+        height: 50px;
+        padding: 0 40px;
+      }
+    }
+  }
+
+  &-form {
+    padding: 17px 0 0 0;
+    
+    &-title {
+      .mixin-text(#222, 16px, 300, 19px);
+      text-transform: uppercase;
+
+    }
+
+    &-list {
+      list-style-type: none;
+      margin: 0 0 24px 0;
+
+      &-item {
+        margin: 0 0 21px 0;
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+
+    &-field {
+      .mixin-text(#222, 13px, 300, 16px);
+      border: 1px solid #A4A4A4;
+      box-sizing: border-box;
+      height: 44px;
+      padding: 0 17px;;
+      width: 360px;
+    }
+
+    &-button-quote {
+      .mixin-text(#4A4A4A, 11px, 300, 13px);
+      background: transparent;
+      border: 1px solid #A4A4A4;
+      cursor: pointer;
+      height: 34px;
+      padding: 0 15px;
+      text-transform: uppercase;
+      margin: 0 0 58px 0;
+    }
+
+    &-bill {
+      align-items: center;
+      background: #F5f3f3;
+      display: flex;
+      flex-direction: column;
+      min-width: 360px;
+      
+      &-total {
+        align-items: flex-end;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 39px 34px 21px 0;
+        margin: 0 0 17px 0;
+        width: 100%;
+
+        position: relative;
+
+        &::before {
+          content: "";
+          background: #e2e2e2;
+          bottom: 0;
+          display: block;
+          height: 1px;
+          left: 43px;
+          position: absolute;
+          width: 275px;
+        }
+      }
+        
+      &-sub-total {
+        .mixin-text(#4a4a4a, 11px, 400, 13px);
+        margin: 0 0 12px 0;
+        text-transform: uppercase;
+      }
+
+      &-grand-total {
+        .mixin-text(#222, 16px, 300, 19px);
+        padding: 0 3px 0 0;
+        text-transform: uppercase;
+
+        &-price {
+          color: #f16d7f;
+          font-weight: 700;
+        }
+      }
+
+      &-text {
+        margin: 0 24px 0 0;
+      }
+
+      &-button {
+        .mixin-text(#fff, 16px, 300, 19px);
+        background: #f16d7f;
+        border: 0;
+        cursor: pointer;
+        height: 50px;
+        width: 275px;
+        margin: 0 0 42px 0;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.subscribe {
+  background: linear-gradient(rgba(244, 244, 244, .7), rgba(244, 244, 244, .7)), url(../img/subscribe-bg.jpg) no-repeat;
+  background-size: cover;
+  min-height: 448px;
+
+  &-wrap {
+    margin: 0 auto;
+    max-width: 1140px;
+    padding: 97px 0 0 0;
+  }
+
+  &-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1043px;
+    margin: 0 auto 0 0;
+  }
+
+  &-info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+
+    &-text {
+      .mixin-text(#222224, 20px, 400, 24px);
+      text-align: center;
+
+      &-italic {
+        font-style: italic;
+      }
+    }
+
+    &-avatar {
+      margin: 0 0 30px 0;
+    }
+  }
+
+  &-form {
+    max-width: 360px;
+    padding: 53px 0 0 0;
+
+    &-title {
+      .mixin-text(#222224, 24px, 700, 40px);
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    &-text {
+      .mixin-text(#222224, 18px, 400, 30px);
+      margin: -3px 0 32px 0;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    &-email {
+      background: #e1e1e1;
+      border: none;
+      border-radius: 20px 0 0 20px;
+      box-sizing: border-box;
+      height: 49px;
+      padding: 0 0 0 22px;
+      width: 259px;
+
+      &::placeholder {
+        .mixin-text(#000, 14px, 400, 17px);
+      }
+    }
+
+    &-button {
+      .mixin-text(#fff, 14px, 400, 17px);
+      background: #f16d7f;
+      border: none;
+      border-radius: 0 20px 20px 0;
+      cursor: pointer;
+      height: 49px;
+      margin: 0 0 0 -4px;
+      width: 100px;
+    }
+  }
+}
