@@ -1,0 +1,32 @@
+.brand {
+  color: #222;
+  text-transform: uppercase;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 92px;
+    background: @color-accent;
+    position: absolute;
+    left: -28px;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    margin: 0;
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  &__accent {
+    color: @color-accent;
+  }
+}

@@ -1,0 +1,42 @@
+.page-info {
+  background: #f8f3f4;
+
+  &__content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    min-height: 148px;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    color: @color-accent;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+  }
+}
+
+.breadcrumbs {
+  display: flex;
+  font-size: 14px;
+  line-height: 17px;
+  list-style-type: none;
+
+  & .breadcrumbs__item+.breadcrumbs__item::before {
+    content: "/\00a0";
+    color: #636363;
+    font-weight: 300;
+  }
+
+  &__link {
+    color: #636363;
+    font-weight: 300;
+  }
+
+  &__item {
+    color: @color-accent;
+    font-weight: 700;
+    margin: 0 5px 0 0;
+  }
+}

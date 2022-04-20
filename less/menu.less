@@ -1,0 +1,35 @@
+.menu {
+  &__checkbox {
+    display: none;
+
+    &:checked+.menu__button {
+      color: #9D2334;
+    }
+
+    &:checked~.menu__dropdown-block {
+      height: 764px;
+    }
+
+    &:checked~.menu__dropdown-block .button-close .button-close__icon {
+      transform: rotate(360deg);
+    }
+  }
+
+  &__dropdown-block {
+    width: 232px;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    background: #FFF;
+    z-index: 1;
+    transition: 1s;
+    box-sizing: border-box;
+    height: 0;
+    overflow: hidden;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  }
+
+  &__content {
+    padding: 16px 17px 16px 34px;
+  }
+}

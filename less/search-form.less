@@ -1,0 +1,18 @@
+.search-form {
+  display: flex;
+
+  &__input {
+    border: none;
+    width: 0;
+    transition: 1s;
+
+    &:focus {
+      box-sizing: border-box;
+      height: 28px;
+      margin: 0 4px 0 0;
+      outline: none;
+      padding: 0 0 0 4px;
+      width: 150px;
+    }
+  }
+}
