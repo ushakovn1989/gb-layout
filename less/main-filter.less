@@ -3,14 +3,15 @@
   margin: 0 30px 0 0;
 
   &__list {
-    padding: 34px 16px 28px;
+    padding: 16px;
   }
 
   &__checkbox {
     display: none;
 
     &:checked~.main-filter__dropdown-block {
-      width: 360px;
+      max-width: 360px;
+      width: 100%;
 
       & .main-filter__label {
         color: @color-accent;
@@ -33,7 +34,7 @@
     line-height: 17px;
     color: #000000;
     text-transform: uppercase;
-    padding: 16px 0 0 16px;
+    padding: 0 0 0 16px;
   }
 
   &__text {
@@ -45,9 +46,10 @@
     position: absolute;
     background: #fff;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-    top: 51px;
     transition: 1s;
     z-index: 1;
     overflow: hidden;
+    padding: 13px 0 0 0;
+    top: 38px;
   }
 }
