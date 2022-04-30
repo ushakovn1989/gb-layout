@@ -1,5 +1,7 @@
 .products {
   &__content {
+    margin: 0 30px;
+    
     &_short {
       padding: 0 0 128px 0;
     }
@@ -25,17 +27,16 @@
   }
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
   }
 
   &__item {
     display: flex;
     justify-content: center;
     position: relative;
-    width: 360px;
-    margin: 0 0 30px 0;
+    max-width: 360px;
     transition: @button-animation-time;
 
     &:hover {
@@ -48,10 +49,6 @@
 
     &:hover .products__button {
       visibility: visible;
-    }
-
-    &:nth-last-of-type(-n+3) {
-      margin: 0;
     }
   }
 
