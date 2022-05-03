@@ -113,11 +113,11 @@ input[type="number"]:focus {
   padding: 0 0 0 4px;
   width: 150px;
 }
+.menu {
+  padding: 0 0 2px 0;
+}
 .menu__checkbox {
   display: none;
-}
-.menu__checkbox:checked + .menu__button {
-  color: #9D2334;
 }
 .menu__checkbox:checked ~ .menu__dropdown-block {
   height: 764px;
@@ -1420,6 +1420,9 @@ input[type="number"]:focus {
   }
   .buttons-list__item_shifting {
     margin: 0;
+  }
+  .menu {
+    padding: 0;
   }
   .banner__content {
     background: none;
